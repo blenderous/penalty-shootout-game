@@ -61,6 +61,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  height: 100%;
+}
+
 #zee-ball {
   position: absolute; top: 440px; left: 390px;
   -webkit-transition: width 0.5s linear, height 0.5s linear;
@@ -84,6 +93,10 @@ textarea {
   background: url('../img/background.jpg') no-repeat top center transparent;
   cursor: pointer;
   overflow: hidden;
+
+  /* center vertically on the screen */
+  top: 50%;
+  margin-top: -262.5px;
 }
 
 #vertical-direction {
@@ -215,13 +228,13 @@ textarea {
   background: rgba(255, 255, 255, 0.8);
   /* IE 6/7 */
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF);
-  /* IE8 */    
+  /* IE8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF)";
   /* border radius */
   -webkit-border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  
+
   /* font styles */
   font: 25px sans-serif;
 }
